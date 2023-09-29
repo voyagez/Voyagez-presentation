@@ -1,0 +1,214 @@
+.header {
+  background-image: url("https://media2.giphy.com/media/2tNvsKkc0qFdNhJmKk/giphy.gif");
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.headerContainer {
+  width: 100%;
+  max-width: 1024px;
+  margin: 20px 0px 100px 0px;
+}
+
+.headerTitle {
+  font-size: 35pt;
+  animation-name: header-fade;
+  animation-duration: 5s;
+}
+@keyframes header-fade {
+  from {
+    color: rgba(255, 255, 255, 0);
+  }
+  to {
+    color: rgb(255, 255, 255);
+  }
+}
+.headerContainer.listMode {
+  margin: 20px 0px 0px 0px;
+}
+
+.headerList {
+  position: relative;
+  justify-content: center;
+  top: 60px;
+  display: flex;
+  gap: 40px;
+  margin-top: 0px;
+}
+
+.headerListItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.headerListItem.active {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  animation-name: header-list-item-hover;
+  animation-duration: 1s;
+  color: yellow;
+}
+
+.headerListItem:hover {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  animation-name: header-list-item-active-hover;
+  animation-duration: 1s;
+  color: yellow;
+}
+@keyframes header-list-item-hover {
+  from {
+    color: white;
+  }
+  to {
+    color: yellow;
+  }
+}
+
+.headerListItem.active:hover {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 20px;
+  color: yellow;
+}
+@keyframes header-list-item-active-hover {
+  from {
+    color: white;
+  }
+  to {
+    color: yellow;
+  }
+}
+
+.headerDesc {
+  margin: 20px 0px;
+}
+
+/* .headerBtn {
+  background-color: #00000026;
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+} */
+
+.headerBtn {
+  margin-left: 20px;
+  border: solid 1px;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #00000027;
+  border-radius: 10%;
+  cursor: pointer;
+}
+.headerBtn:hover {
+  margin-left: 20px;
+  border: solid 1px;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #00000068;
+  border-radius: 5%;
+  animation-name: header-button-hover;
+  animation-duration: 1s;
+}
+@keyframes header-button-hover {
+  from {
+    background-color: #00000027;
+  }
+  to {
+    background-color: #00000068;
+  }
+}
+
+.headerSearch {
+  height: 30px;
+  background-color: white;
+  border: 0.5px solid #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.headerIcon {
+  color: lightgray;
+}
+
+.headerSearchItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerSearchInput {
+  border: none;
+  outline: none;
+}
+
+.headerSearchText {
+  color: lightgray;
+  cursor: pointer;
+}
+
+.date {
+  position: absolute;
+  top: 50px;
+  z-index: 2;
+}
+
+.options {
+  z-index: 2;
+  position: absolute;
+  top: 50px;
+  background-color: white;
+  color: gray;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.optionItem {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.optionCounter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: black;
+}
+
+.optionCounterButton {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #0071c2;
+  color: #0071c2;
+  cursor: pointer;
+  background-color: white;
+}
+
+.optionCounterButton:disabled {
+  cursor: not-allowed;
+}

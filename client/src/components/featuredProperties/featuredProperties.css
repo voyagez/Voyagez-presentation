@@ -1,0 +1,129 @@
+.fp {
+  /* width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  overflow: scroll; */
+  display: flex;
+  overflow: scroll;
+  padding: 0px;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-bottom: 15px;
+  height: 500px;
+  width: 1000px;
+}
+
+.fpItem {
+  /* flex: 1;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer; */
+  margin: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-width: 0.1px;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-color: rgba(0, 0, 0, 0.125);
+  position: relative;
+  height: 450px;
+  width: 300px;
+}
+
+.fpImg {
+  /* width: 100%;
+  height: 250px;
+  object-fit: cover; */
+  border-radius: 5%;
+  margin: 25px;
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+  cursor: pointer;
+}
+.fpImg:hover {
+  /* width: 100%;
+  height: 250px;
+  object-fit: cover; */
+  margin: 20px;
+  object-fit: cover;
+  width: 260px;
+  height: 260px;
+  cursor: pointer;
+  animation-name: fp-hover-width, fp-hover-height, fp-hover-margin;
+  animation-duration: 0.5s;
+}
+
+.fpName {
+  color: #333;
+  font-weight: bold;
+  display: block;
+  float: left;
+  width: 250px;
+  height: 50px;
+}
+
+.fpCity {
+  font-weight: 300;
+  display: block;
+  float: left;
+  width: 250px;
+  height: 25px;
+}
+
+.fpPrice {
+  font-weight: 500;
+  display: block;
+  float: left;
+  width: 250px;
+  height: 25px;
+}
+
+.fpRating > button {
+  background: url("https://media2.giphy.com/media/2tNvsKkc0qFdNhJmKk/giphy.gif");
+  color: white;
+  border: none;
+  padding: 3px;
+  margin-right: 10px;
+  font-weight: bold;
+  display: block;
+  float: left;
+  height: 25px;
+  width: 25px;
+}
+
+.fpRating > span {
+  font-weight: 500;
+  display: block;
+  float: left;
+  width: 250px;
+  height: 25px;
+}
+@keyframes fp-hover-width {
+  from {
+    width: 250px;
+  }
+
+  to {
+    width: 260px;
+  }
+}
+@keyframes fp-hover-height {
+  from {
+    height: 250px;
+  }
+  to {
+    height: 260px;
+  }
+}
+@keyframes fp-hover-margin {
+  from {
+    margin: 25px;
+  }
+  to {
+    margin: 20px;
+  }
+}
